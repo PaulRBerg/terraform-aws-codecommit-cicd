@@ -27,7 +27,7 @@ resource "aws_codecommit_repository" "repo" {
   default_branch    = "${var.repo_default_branch}"
   
   lifecycle {
-    ignore_changes  = "true"  
+    ignore_changes  = "*"  
   }
 }
 
