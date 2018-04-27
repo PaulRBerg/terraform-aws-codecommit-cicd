@@ -67,7 +67,9 @@ resource "aws_iam_role_policy" "attach_codepipeline_policy" {
             "Action": [
                 "s3:GetObject",
                 "s3:GetObjectVersion",
-                "s3:GetBucketVersioning"
+                "s3:GetBucketVersioning",
+                "s3:ListBucket",
+                "s3:ListObjects"
             ],
             "Resource": "*",
             "Effect": "Allow"
